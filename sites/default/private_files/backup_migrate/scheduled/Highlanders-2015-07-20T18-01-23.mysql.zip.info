@@ -1,0 +1,8 @@
+filename = "Highlanders-2015-07-20T18-01-23"
+description = ""
+datestamp = "1437395485"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.37"
+sites[0][name] = "Highlanders"
+sites[0][url] = "http://www.test.com/highlanders/"

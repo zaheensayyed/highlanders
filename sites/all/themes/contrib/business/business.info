@@ -11,6 +11,7 @@ regions[sidebar_first]  = First Sidebar
 regions[header]         = Header
 regions[homequotes]     = Home Quotes
 regions[homeslider]     = Home Slider
+regions[upcoming_events]     = Upcoming Events
 regions[home_high1]     = Home Highlight 1
 regions[home_high2]     = Home Highlight 2
 regions[home_high3]     = Home Highlight 3

@@ -84,7 +84,7 @@
       <div id="main-menu">
         <?php 
           if (module_exists('i18n_menu')) {
-            $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
+            $main_menu_tree = i18n_menu_translated_tree(variable_get('  ', 'main-menu'));
           } else {
             $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
           }
@@ -135,7 +135,12 @@
   <div id="home-quote"> <?php print render($page['homequotes']); ?></div>
   <?php endif; ?>
   
-  <?php if ($page['home_high1'] || $page['home_high2'] || $page['home_high3']): ?>
+  
+    <?php if ($page['upcoming_events']){
+      print render($page['upcoming_events']);
+    }?>
+
+  <?php /*if ($page['home_high1'] || $page['home_high2'] || $page['home_high3']): ?>
     <div id="home-highlights" class="clearfix">
      <?php if ($page['home_high1']): ?>
      <div class="home-highlight-box"><?php print render($page['home_high1']); ?></div>
@@ -147,7 +152,7 @@
      <div class="home-highlight-box remove-margin"><?php print render($page['home_high3']); ?></div>
      <?php endif; ?>
     </div>
-  <?php endif; ?>
+  <?php endif;*/ ?>
   
   <?php if (theme_get_setting('show_front_content') == 1): ?>
     <div id="main" class="clearfix">

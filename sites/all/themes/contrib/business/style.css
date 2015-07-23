@@ -508,9 +508,17 @@ li.sfHover > a > .sf-sub-indicator {
 /*-------------------------------------------*/
 .home-highlight-box {
   float: left;
-  width: 290px;
-  margin-right: 25px;
+  width: 280px;
+  margin: 0 13px 0 13px !important;
   text-align: center;
+}
+
+.region.region-upcoming-events {
+  background: none repeat scroll 0 0 #f1f2f2;
+  padding: 5px 0;
+}
+#block-views-upcomming-events-block > h2{
+  padding: 0 5px; 
 }
 
 .home-highlight-box h2 {
@@ -524,6 +532,8 @@ li.sfHover > a > .sf-sub-indicator {
   -moz-box-shadow: 0px 0px 5px #CCC;
   -webkit-box-shadow: 0px 0px 5px #CCC;
   box-shadow: 0px 0px 5px #CCC;
+  width: 100%;
+  height: 180px;
 }
 
 /*-------------------------------------------*
@@ -1119,12 +1129,6 @@ h3.comment-title a{
   width: 67%;
 }
 
-.grid {
-  width: 46%;
-  padding: 10px;
-  float: left;
-}
-
 .grid img {
   width: 100%;
   height: 150px;
@@ -1137,4 +1141,29 @@ h3.comment-title a{
 .grid span a {
   font-size: 18px;
   color: #000000;
+}
+
+.slider-caption {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.26);
+  color: #fff;
+  height: 6%;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 281px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.frontpage-row {
+  width: 46%;
+  float: left;
+}
+
+.grid .views-row-odd{
+  margin-right: 15px;
+}
+
+.grid .views-row-even{
+  margin-left: 15px;
 }

@@ -56,5 +56,7 @@ jQuery(document).ready(function($) {
         rotateSwitch(); // Resume rotation
         return false; //Prevent browser jump to link anchor
     });    
-
+    
+    //$("home-highlights div:nth-child(3)").addClass("remove-margin");
+    $(".home-highlight-box:nth-child(3)").addClass("remove-margin");
 });
