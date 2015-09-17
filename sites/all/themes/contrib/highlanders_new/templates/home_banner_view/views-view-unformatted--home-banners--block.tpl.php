@@ -29,10 +29,12 @@ $i = 1;
             <img src="img/portfolio/home_slider_3.jpg">
         </div> -->
         <?php foreach ($rows as $id => $row): ?>
-			<div class="item">
-		    	<?php print $row; ?>
-			</div>
-		<?php endforeach; ?>
+            <?php if($i == 1){$active = 'active';}else{$active = '';}?>
+            <div class="item <?php echo $active?>">
+                <?php print $row; ?>
+            </div>
+            <?php $i++;?>
+        <?php endforeach; ?>
         
     </div>
 
@@ -46,10 +48,10 @@ $i = 1;
 </div>
 
 <!-- <div class="paging">
-  	<?php //foreach ($rows as $id => $row): ?>
-    	<?php //echo '<a rel="'.$i.'" href="#">'.$i.'</a>';?>
-    	<?php //$i++;?>
-  	<?php //endforeach ?>
+    <?php //foreach ($rows as $id => $row): ?>
+        <?php //echo '<a rel="'.$i.'" href="#">'.$i.'</a>';?>
+        <?php //$i++;?>
+    <?php //endforeach ?>
 </div> -->
 
 <!-- <div class="item active">

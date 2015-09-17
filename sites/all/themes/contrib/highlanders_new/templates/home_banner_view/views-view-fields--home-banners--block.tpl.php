@@ -28,7 +28,6 @@
 	<?php echo $field->content;?>
 <?php endforeach; ?>
 
-
 <?php //foreach ($fields as $id => $field): ?>
 	<?php //echo $field->handler->view->result[0]->field_field_caption[0]['raw']['value'];?>
 <?php //endforeach; ?>

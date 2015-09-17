@@ -23,12 +23,43 @@
  *
  * @ingroup views_templates
  */
+/*echo '<pre>'; 
+	print_r($row->field_field_image[0]['raw']);
+	exit;*/
+	$image = $row->field_field_image[0]['raw']['uri'];
+	$title = $row->node_title;
 ?>
+
+<a href="#" class="portfolio-box">
+	<img src="<?php print image_style_url("front_tour_event", $image);?>" alt="<?php echo $title?>" title="<?php echo $title?>" class="img-responsive" alt="">
+	<div class="portfolio-box-caption">
+	    <div class="portfolio-box-caption-content">
+	        <div class="project-category text-faded">
+	            
+	        </div>
+	        <div class="project-name">
+	            <?php echo $row->node_title ?>
+	        </div>
+	    </div>
+	</div>
+</a>
+<?php /*?>
 <?php foreach ($fields as $id => $field): ?>
-	<?php echo $field->content;?>
+	<?php 
+	echo '<pre>'; 
+	print_r($field->raw);
+	exit;
+
+	?>
+	<?php print $field->content; ?>
+	<?php /*?>
+  <?php if (!empty($field->separator)): ?>
+    <?php print $field->separator; ?>
+  <?php endif; ?>
+
+  <?php print $field->wrapper_prefix; ?>
+    <?php print $field->label_html; ?>
+    <?php print $field->content; ?>
+  <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
-
-
-<?php //foreach ($fields as $id => $field): ?>
-	<?php //echo $field->handler->view->result[0]->field_field_caption[0]['raw']['value'];?>
-<?php //endforeach; ?>
+<?php */?>
