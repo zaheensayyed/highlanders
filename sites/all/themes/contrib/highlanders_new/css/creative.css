@@ -102,7 +102,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #25BB4B !important;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -124,14 +124,14 @@ aside {
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:focus, 
 .navbar-default .navbar-nav > .open > a:hover{
-    background: #000000;
-    color: #ffffff;
+    background: #25BB4B;
+    color: #ffffff !important;
 }
 
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-        background-color: #000000;
+        background-color: #ffffff;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -504,8 +504,9 @@ body {
 }
 
 .site-name {
-    margin-left: 10px !important;
-    width: 320px;
+  font-family: niconne,fantasy;
+  font-size: 55px;
+  text-transform: none;
 }
 
 .logo-highland {
@@ -547,66 +548,26 @@ body {
 .social-icons .fa-instagram:hover{ color: #3b5998;}
 .social-icons .fa-instagram:focus{ color: #3b5998;}
 
-.node-fulldisplay {
-    margin-top: 50px;
+.navbar {
+    border: none;
+    border-bottom: 1px solid !important;
+    border-radius: 0px;
+    margin-bottom: 0px;
 }
 
-.node-fulldisplay h2 {
-    background-color: #f8f8f8;
-    margin: 0 0 10px 0px;
-    padding: 20px 18px;
+.nav-custom-inline > ul{
+    margin-left: 0px !important;
+    margin-top: 22px !important;
 }
 
-.myview-img-thumb img,
-.node-banner img {
-    width: 100%;
+.navbar-collapse {
+    padding-top: 20px !important
 }
 
-.sidebar {
-    margin-top: 50px;
+.navbar-brand img{
+    max-width: 115px;
 }
 
-.sidebar h5 {
-    line-height: 20px;
-}
-
-.sidebar .node-fulldisplay {
-    margin-top: 0px;
-}
-
-.sidebar .node-fulldisplay h2 {
-    display: none;
-}
-
-.sidebar-title {
-    font-size: 20px;
-    font-weight: 600;
-    border-top: 2px solid #f8f8f8;
-    padding-top: 10px;
-}
-
-.field.field-name-field-tags.field-type-taxonomy-term-reference.field-label-above {
-    display: none;
-}
-
-li.comment_forbidden.last {
-    display: none;
-}
-
-ul.links.inline li {
-    padding: 0px;
-}
-
-/*temp fixes*/
-.nav.navbar-nav.navbar-right.sm {
-    font-size: 0;
-}
-
-.dropdown-menu li {
-    list-style-type: none;
-}
-
-.carousel-inner img{
-    width: 100%;
-    height: auto;
+.contact-number{
+    text-align: right;
 }

@@ -1,0 +1,42 @@
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #01305C;
+}
+
+/* ========================================================================
+ * DECOM d.o.o.
+ * Distribucija sadrzaja zabranjena
+ * ========================================================================
+ * nav-custom-inline - NAVIGATION ======================================================================== */
+.nav-custom-inline {text-transform:uppercase; position:relative !important;}
+.navbar-collapse.collapse {overflow:hidden !important;}
+.nav-custom-inline > ul  {margin-top:130px; margin-left:50px !important;}
+@media (max-width: 768px) {
+.nav-custom-inline > ul {margin-top:0;margin-left:0 !important;}
+.navbar-collapse.collapse {overflow:visible !important}
+}
+
+.dropdown-menu {width: 100%;
+position: fixed;
+top: 170px;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 0 auto;
+border-radius: 0px;
+text-align:center;
+}
+
+.dropdown-menu li {display:inline-block;}
+
+.dropdown-menu li.dropdown .dropdown-menu {top:210px;}
+
+
+.dropdown-menu li.dropdown {background:url(http://decombh.org/img/nav_down.png) no-repeat bottom right !important;
+background-position: 5px 9px !important;
+}
+
+.navbar-brand img {max-width:130px;}

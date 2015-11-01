@@ -64,30 +64,33 @@
  * @see template_process()
  */
 ?>
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<nav>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="row">
-                <div class="col-md-3 hidden-xs logo-row">
-                    <div class="logo-highland">
-                        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-                     </div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="<?php print $logo; ?>"></a>
+        </div>
+       
+        
+         <div class="navbar-collapse collapse nav-custom-inline navbar-ex1-collapse">
+            <div class="row no-gutters">
+                <div class="col-md-8">
+                    <span class="site-name">The Highland AdvenTourist</span>
                 </div>
-                <div class="col-md-9">
-                    <a class="navbar-brand page-scroll site-name" href="#page-top">The Highland AdvenTourist</a>
+                <div class="col-md-4">
+                    <div class="contact-number">
+                        <strong>Call us</strong><br>+91-2223423965
+                    </div>
                 </div>
             </div>
-        </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <?php 
                if (module_exists('i18n_menu')) {
                   $main_menu_tree = i18n_menu_translated_tree(variable_get('  ', 'main-menu'));
@@ -96,24 +99,11 @@
                }
                print drupal_render($main_menu_tree);
             ?>
-
-            <!-- <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Destination <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Ladhak</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Adventure Destinations <span class="caret"></span></a></li>
-                <li><a href="#">Corporate <span class="caret"></span></a></li>
-                <li><a href="#">College <span class="caret"></span></a></li>
-                <li><a href="#">Travelouge</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul> -->
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
+  </div>
 </nav>
 <div id="page-top"></div>
 <section class="home-slider">

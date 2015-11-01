@@ -102,6 +102,23 @@ function highlanders_new_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+function highlanders_new_preprocess_html(&$variables) {
+  drupal_add_css(
+    'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+array('type' => 'external')
+  );
+
+    drupal_add_css(
+    'http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic',
+array('type' => 'external')
+  );
+
+    drupal_add_css(
+    'https://fonts.googleapis.com/css?family=Niconne',
+array('type' => 'external')
+  );
+}
+
 /*function highlanders_new_block_view_alter(&$data, $block){
    if($block->delta == 'upcomming_events-block'){
       echo '<pre>';
